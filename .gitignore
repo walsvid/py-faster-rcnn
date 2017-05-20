@@ -1,5 +1,11 @@
 *.pyc
+output
+data/download_files
+data/faster_rcnn_models
+data/VOC*
+data/*/*.jpg
 .ipynb_checkpoints
 lib/build
 lib/pycocotools/_mask.c
 lib/pycocotools/_mask.so
+tools/predict_res/
