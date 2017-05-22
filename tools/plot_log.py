@@ -9,8 +9,7 @@ import matplotlib.pyplot as plt
 def str2num(str_list, output_type):
     return [output_type(x) for x in str_list]
 
-
-if "__main__" == __name__:
+def main():
     log_file = "/home/xuxing/workspace-xing/py-faster-rcnn/experiments/logs/faster_rcnn_alt_opt_VGG16_.txt.2017-05-15_22-04-43"
     pattern_itr = re.compile(r"105\]\s+Iteration\s+([\d]+)")
     pattern_rpn = re.compile(r"rpn_cls_loss[\s=]{1,3}([\d\.]+)")
@@ -48,3 +47,7 @@ if "__main__" == __name__:
         plt.title("RPN Boundary Box Loss Stage 2")
 
         plt.show()
+
+
+if "__main__" == __name__:
+    main()
